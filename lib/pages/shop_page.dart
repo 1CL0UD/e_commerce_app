@@ -4,22 +4,19 @@ class ShopPage extends StatelessWidget {
   ShopPage({Key? key}) : super(key: key);
   final List<Map<String, dynamic>> products = [
     {
-      'image':
-          'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'image': 'assets/images/fruit_images/fruit (1).png',
       'name': 'Product 1',
       'price': '\$100',
       'description': 'Description of Product 1',
     },
     {
-      'image':
-          'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'image': 'assets/images/fruit_images/fruit (2).png',
       'name': 'Product 2',
       'price': '\$150',
       'description': 'Description of Product 2',
     },
     {
-      'image':
-          'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'image': 'assets/images/fruit_images/fruit (3).png',
       'name': 'Product 3',
       'price': '\$50',
       'description': 'Description of Product 3',
@@ -66,7 +63,7 @@ class ShopPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 230,
+                    height: 255,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: products.length,
@@ -98,7 +95,7 @@ class ShopPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 230,
+                    height: 255,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: products.length,
@@ -130,7 +127,7 @@ class ShopPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 230,
+                    height: 255,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: products.length,
@@ -174,27 +171,24 @@ class ProductCard extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.44,
       margin: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(20.0),
         color: Colors.white,
         border: Border.all(color: Colors.grey.withOpacity(0.4), width: 1.5),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(10),
-              topRight: Radius.circular(10),
-            ),
-            child: Image.network(
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Image.asset(
               image,
               width: double.infinity,
               height: 100,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
