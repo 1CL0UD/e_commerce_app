@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/components/search_bar.dart';
 import 'package:flutter/material.dart';
 
 class ShopPage extends StatelessWidget {
@@ -29,16 +30,9 @@ class ShopPage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
-            child: TextField(
-              decoration: const InputDecoration(
-                hintText: 'Search a product',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(),
-              ),
-              onChanged: (value) {},
-            ),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+            child: SearchBarComponent(),
           ),
           Expanded(
             child: Padding(
