@@ -31,7 +31,7 @@ class ShopPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Padding(
-            padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+            padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
             child: SearchBarComponent(),
           ),
           Expanded(
