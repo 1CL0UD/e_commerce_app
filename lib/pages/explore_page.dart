@@ -23,8 +23,8 @@ class ExplorePage extends StatelessWidget {
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.all(32.0),
-                          child: Image.network(
-                            'https://clipart-library.com/image_gallery2/Fruit.png',
+                          child: Image.asset(
+                            'assets/images/fruit_images/fruit (1).png',
                             fit: BoxFit.cover,
                           ),
                         ),
