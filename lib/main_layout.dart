@@ -18,7 +18,7 @@ class _MainLayoutState extends State<MainLayout> {
   final List _pages = [
     ShopPage(),
     const ExplorePage(),
-    const CartPage(),
+    CartPage(),
     const FavouritePage(),
     const ProfilePage()
   ];
