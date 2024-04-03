@@ -56,19 +56,21 @@ class ShopPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 255,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: products.length,
-                      itemBuilder: (BuildContext context, int index) {
+                  SingleChildScrollView(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                    scrollDirection: Axis.horizontal,
+                    child: Wrap(
+                      direction: Axis.horizontal,
+                      spacing: 12.0, // Adjust spacing as needed
+                      children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
                           name: products[index]['name'],
                           price: products[index]['price'],
                           description: products[index]['description'],
                         );
-                      },
+                      }),
                     ),
                   ),
                   const Padding(
@@ -88,19 +90,21 @@ class ShopPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 255,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: products.length,
-                      itemBuilder: (BuildContext context, int index) {
+                  SingleChildScrollView(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                    scrollDirection: Axis.horizontal,
+                    child: Wrap(
+                      direction: Axis.horizontal,
+                      spacing: 12.0, // Adjust spacing as needed
+                      children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
                           name: products[index]['name'],
                           price: products[index]['price'],
                           description: products[index]['description'],
                         );
-                      },
+                      }),
                     ),
                   ),
                   const Padding(
@@ -120,19 +124,21 @@ class ShopPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 255,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: products.length,
-                      itemBuilder: (BuildContext context, int index) {
+                  SingleChildScrollView(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                    scrollDirection: Axis.horizontal,
+                    child: Wrap(
+                      direction: Axis.horizontal,
+                      spacing: 12.0, // Adjust spacing as needed
+                      children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
                           name: products[index]['name'],
                           price: products[index]['price'],
                           description: products[index]['description'],
                         );
-                      },
+                      }),
                     ),
                   ),
                 ],
@@ -162,10 +168,9 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.44,
-      margin: const EdgeInsets.all(8.0),
+      width: MediaQuery.of(context).size.width * 0.45,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: BorderRadius.circular(16.0),
         color: Colors.white,
         border: Border.all(color: Colors.grey.withOpacity(0.4), width: 1.5),
       ),
