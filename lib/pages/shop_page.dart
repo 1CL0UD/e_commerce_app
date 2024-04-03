@@ -62,7 +62,7 @@ class ShopPage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Wrap(
                       direction: Axis.horizontal,
-                      spacing: 12.0, // Adjust spacing as needed
+                      spacing: 12.0,
                       children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
@@ -96,7 +96,7 @@ class ShopPage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Wrap(
                       direction: Axis.horizontal,
-                      spacing: 12.0, // Adjust spacing as needed
+                      spacing: 12.0,
                       children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
@@ -130,7 +130,7 @@ class ShopPage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Wrap(
                       direction: Axis.horizontal,
-                      spacing: 12.0, // Adjust spacing as needed
+                      spacing: 12.0,
                       children: List.generate(products.length, (index) {
                         return ProductCard(
                           image: products[index]['image'],
